@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#puertaIzq,
+#puertaDer {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: blue;
+}
+
+#puertaIzq {
+  left: 0;
+}
+
+#puertas {
+  max-width: 100vh;
+}
+
+#puertaDer {
+  right: 0;
+}
+
+.puerta {
+  border-style: solid;
+  border-color: white;
+}
+
+#puertaIzq.abrir {
+  animation: abrirIzq 1s ease-out forwards;
+}
+
+#puertaIzq.cerrar {
+  animation: cerrarIzq 1s ease-out forwards;
+}
+
+#puertaDer.abrir {
+  animation: abrirDer 1s ease-out forwards;
+}
+
+#puertaDer.cerrar {
+  animation: cerrarDer 1s ease-out forwards;
+}
+
+#chapaIzq,
+#chapaDer {
+  width: 20px;
+  height: 80px;
+  position: absolute;
+  border-radius: 5%;
+  top: 50%;
+  background-color: cyan;
+}
+
+#chapaIzq {
+  right: 20px;
+  transform: translate(-50%, -50%);
+}
+
+#chapaDer {
+  left: 20px;
+  transform: translate(0%, -50%);
+}
+
+.chapa:hover {
+  cursor: pointer;
+}
+
+/* Animaciones */
+@keyframes abrirIzq {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}
+
+@keyframes cerrarIzq {
+  0% {
+    transform: translateX(-80%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes abrirDer {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(80%);
+  }
+}
+
+@keyframes cerrarDer {
+  0% {
+    transform: translateX(80%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

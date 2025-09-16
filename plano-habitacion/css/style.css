@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+}
+
+#contenedor-imagen-plano {
+  position: fixed;
+  outline-style: solid;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* Cuando el viewport es más ancho que alto */
+@media screen and (min-aspect-ratio: 1/1) {
+  #contenedor-imagen-plano {
+    width: auto;
+    height: 90%;
+  }
+
+  #contenedor-imagen-plano img {
+    width: auto;
+    height: 90%;
+  }
+}
+
+/* Cuando el viewport es más alto que ancho */
+@media screen and (max-aspect-ratio: 1/1) {
+  #contenedor-imagen-plano {
+    width: 90%;
+    height: auto;
+  }
+
+  #contenedor-imagen-plano img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+#contenedor-comedor{
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: blue;
+    position: absolute;
+    width: 26%;
+    height: 29%;
+    top: 12%;
+    left: 4%;
+    opacity: 0%;
+}
+
+#contenedor-comedor:hover{
+    opacity: 100%;
+    cursor: pointer;
+}

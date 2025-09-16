@@ -1,0 +1,47 @@
+body{
+  margin: 0;
+  overflow: hidden;
+}
+
+#puerta-izquierda{
+  height: 100vh;
+  width: 50%;
+  background-color: blue;
+  position: absolute;
+  right: 0;
+}
+
+#puerta-izquierda.abrir{
+ 
+  animation-name: abrir;
+  animation-timing-function: ease;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes abrir{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(90%);
+  }
+}
+
+
+#puerta-izquierda.cerrar{
+ 
+  animation-name: cerrar;
+  animation-timing-function: ease;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cerrar{
+  0%{
+    transform: translateX(90%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
