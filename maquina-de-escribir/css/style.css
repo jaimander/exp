@@ -20,6 +20,10 @@ body {
   z-index: 1;
 }
 
+#contenedor-maquina:hover{
+  cursor: pointer;
+}
+
 #contenedor-hoja {
   position: absolute;
   background-color: #e5ebf0;
