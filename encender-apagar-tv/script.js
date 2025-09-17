@@ -15,6 +15,7 @@ tv.onclick = function () {
   // Verifica si el sonido no se está reproduciendo
   if (reproduciendo == false) {
     sonido.play(); // Reproduce el audio
+    sonido.volume = 0.2;
     ruidoVisual.style.opacity = 1; // Hace visible el ruido visual
     reproduciendo = true; // Actualiza el estado a "reproduciendo"
   } else {

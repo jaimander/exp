@@ -95,16 +95,16 @@ function changeImage() {
     document.getElementById("img").src =
       "https://cdn.glitch.global/879b5985-0f78-4453-9040-f715dd5c4c82/gato.jpg?v=1677684242796";
   }
-  
-    if (scrollTop > 10 + winheight) {
+
+  if (scrollTop > 10 + winheight) {
     document.getElementById("img").style.opacity = 1;
     document.getElementById("img").src =
-     "https://cdn.glitch.global/879b5985-0f78-4453-9040-f715dd5c4c82/perro.jpg?v=1677684242342";
+      "https://cdn.glitch.global/879b5985-0f78-4453-9040-f715dd5c4c82/perro.jpg?v=1677684242342";
   }
-  
-  if (scrollTop > 10 + winheight*2) {
+
+  if (scrollTop > 10 + winheight * 2) {
     document.getElementById("img").style.opacity = 1;
     document.getElementById("img").src =
-     "https://cdn.glitch.global/67955b05-8dad-4355-8026-3159db7fff9f/pato.jpg?v=1678119802466";
+      "https://cdn.glitch.global/67955b05-8dad-4355-8026-3159db7fff9f/pato.jpg?v=1678119802466";
   }
 }
