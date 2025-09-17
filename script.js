@@ -2,7 +2,6 @@
 const links = document.querySelectorAll("ul li a");
 const preview = document.getElementById("previsualizacion");
 
-
 // Creamos un mapa de href → imagen
 const previews = {
   "cambiar-link-al-volver/index.html": "assets/cambiar.png",
@@ -20,8 +19,19 @@ links.forEach(link => {
   link.addEventListener("mouseenter", () => {
     let imgSrc = previews[link.getAttribute("href")];
     if (imgSrc) {
-      preview.innerHTML = `<img src="${imgSrc}" alt="preview">`;
-      preview.style.display = "block";
+      const img = new Image();
+      img.src = imgSrc;
+      img.alt = "preview";
+
+      // Ocultamos mientras carga
+      preview.style.display = "none";
+      preview.innerHTML = "";
+
+      // Cuando cargue, mostramos el div
+      img.onload = () => {
+        preview.appendChild(img);
+        preview.style.display = "block";
+      };
     }
   });
 
