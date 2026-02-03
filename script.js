@@ -11,7 +11,8 @@ const previews = {
   "plano-habitacion/index.html": "assets/plano.png",
   "puertas-corredizas/index.html": "assets/puerta.png",
   "regresar-a-pagina-anterior-local-storage/index.html": "assets/regresar.png",
-  "scroll-cambiar-img/index.html": "assets/scroll.png"
+  "scroll-cambiar-img/index.html": "assets/scroll.png",
+  "spawnear-fuego/index.html": "assets/fuego.png"
 };
 
 // Para cada link, agregamos eventos
