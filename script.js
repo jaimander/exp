@@ -12,7 +12,8 @@ const previews = {
   "puertas-corredizas/index.html": "assets/puerta.png",
   "regresar-a-pagina-anterior-local-storage/index.html": "assets/regresar.png",
   "scroll-cambiar-img/index.html": "assets/scroll.png",
-  "spawnear-fuego/index.html": "assets/fuego.png"
+  "spawnear-fuego/index.html": "assets/fuego.png",
+  "abrir-y-cerrar-ojo/index.html": "assets/ojo.png"
 };
 
 // Para cada link, agregamos eventos
